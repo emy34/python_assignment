@@ -1,0 +1,7 @@
+fib=[]
+sayı1=1
+sayı2=1
+while sayı1 in range(56):   
+   fib.append(sayı1)
+   sayı1,sayı2= sayı2, sayı1+sayı2
+print(fib)
