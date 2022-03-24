@@ -1,0 +1,13 @@
+def liste(n):
+    prime_num = []
+    for i in range(2, n+1):
+        divider = 0
+        for ii in range(2, i):
+            if not i % ii:
+                divider += 1
+                break
+        if not divider:
+            prime_num.append(i)
+    print(prime_num)
+
+liste(n)
